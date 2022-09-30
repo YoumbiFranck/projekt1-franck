@@ -1,0 +1,547 @@
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.card-img-top {
+  height: 100%;
+  text-decoration: none;
+}
+
+.card {
+  width: 350px;
+  margin: 0 0.5em 10px 0.5em;
+  box-shadow: 2px 6px 6px 0 rgba(22, 22, 26, 0.18);
+  background: #e1e8db;
+  color: #343a40;
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-decoration: none;
+}
+
+.card-body{
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.card-title {
+  padding-top: 0.5em;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-100%);
+}
+
+@media (min-width: 768px) {
+  .card img {
+    height: 11em;
+  }
+}
+
+#eingabeformular-container {
+  grid-area: eingabeformular-bereich;
+  padding: 1rem 1rem;
+  background-color: #e9ecef;
+  border-radius: 1rem;
+}
+
+
+
+#eingabeformular-container>.eingabeformular-zeile:last-of-type {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.nav-bottom {
+  background-color: #343a40;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.nav-bottom>ul {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 2rem;
+  height: 100%;
+}
+
+.nav-bottom>ul>li {
+  display: inline-block;
+  height: 100%;
+  padding: 0 0.4rem 0 0.4rem;
+}
+
+.nav-bottom>ul>li>a {
+  margin-top: 1rem;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+}
+
+.info1 {
+  width: 50px;
+  height: 5000px;
+  margin-bottom: 10px;
+  margin-right: 100px;
+  display: inline-block;
+}
+
+body{
+  position: relative;
+  min-height: 100vh;
+  background-color: #ece8db;
+}
+
+body,
+input,
+textarea,
+button,
+select,
+option {
+  font-family: "Oswald", Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+  line-height: 1rem;
+
+}
+
+#navigationsleiste {
+  grid-area: navigationsleisten-bereich;
+  display: flex;
+  justify-content: center;
+  background-color: #343a40;
+  line-height: 5rem;
+}
+
+#navigationsleiste>a {
+  text-decoration: rgb(11, 11, 11);
+}
+
+h4,
+p {
+  display: inline;
+  margin: 0;
+}
+
+
+.container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-content{
+  padding-bottom: 80px
+}
+
+.suchergebnisse {
+  margin-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-gap: 25px;
+  grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.item {
+  width: 100%;
+  border-radius: 8px;
+  background-color: #2274a5;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.item img {
+  width: 100%;
+  height: 300px;
+  border-radius: 4px;
+}
+
+.flexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item .rezeptTitel {
+  color: white;
+  margin: 20px 10px 0 0;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.itemData {
+  color: white;
+  display: block;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  letter-spacing: .05rem;
+  line-height: 2rem;
+}
+
+.viewButton {
+  text-decoration: none;
+  text-align: center;
+  width: 130px;
+  padding: 10px 0;
+  background-color: #f4442e;
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  align-self: flex-start;
+}
+
+.logocenter {
+  display: flex;
+  justify-content: center;
+}
+
+.food-category{
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+#sitelogo {
+  height: 150px;
+  width: auto;
+}
+
+img.center {
+  display: block;
+  margin: 0 auto;
+}
+
+.card-1 {
+
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #f1efc9;
+}
+
+
+.icons i {
+
+  margin-left: 20px;
+
+}
+
+#brrr {
+  background-color: #E7E7E7;
+  border-radius: 8px;
+  border: none;
+  color: black;
+  padding: 20px 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  transition-duration: 0.2s;
+}
+
+#brrr:hover {
+  background-color: #2274a5;
+  color: white;
+}
+
+.dropdown-button{
+  position: relative;
+  float: right;
+  border: 0;
+  background-color: transparent;
+  margin-right: 2px;
+  margin-left: 5px;
+  padding-bottom: 0.3em;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.dropdown-count-badge{
+  position: absolute;
+  top: 15px;
+  right: 95px;
+  height: 17px;
+  width: 18px;
+  font-weight: bold;
+  color: gold;
+  background-color: #E26D5C;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 50%;
+}
+
+.order-action-btn{
+  position: relative;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #636262FF;
+  border-radius: 3px;
+  width: 100%;
+  font-weight: bold;
+}
+
+.order-access-btn{
+  padding: 5px;
+  margin-left: 5px;
+  border: 1px solid #636262FF;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.card-sl {
+  height: 100%;
+  background: #e1e8db;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-image img {
+  width: 100%;
+  height: 11vw;
+  object-fit: cover;
+  border-radius: 8px 8px 0px 0;
+}
+
+.card-icon {
+  position: relative;
+  z-index: 2;
+  background: transparent;
+  border-radius: 100%;
+  padding: 15px;
+}
+
+.card-icon img{
+    max-width: 20px;
+}
+
+.card-action {
+  position: relative;
+  float: right;
+  margin-top: -25px;
+  margin-right: 3px;
+  z-index: 2;
+  color: #E26D5C;
+  background: #fff;
+  border-radius: 100%;
+  padding: 15px;
+  font-size: 15px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-action:hover {
+  color: #fff;
+  background: #E26D5C;
+  /*-webkit-animation: pulse 1.5s infinite;*/
+}
+
+.card-details{
+  height: 40px;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+.card-heading {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Lucida Console", "Courier New", monospace;
+  padding: 10px 0 0 10px;
+}
+
+.card-text-left {
+  float: left;
+  padding: 10px 0 10px 10px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #636262;
+}
+
+.card-text-right {
+  float: right;
+  padding: 10px 10px 10px 0;
+  font-weight: bold;
+  font-size: 14px;
+  color: #636262;
+}
+
+.card-button {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  width: 100%;
+  background-color: #45503d;
+  color: #ffffff;
+  border-radius: 0 0 8px 8px;
+}
+
+.card-button:hover {
+  text-decoration: none;
+  background-color: #79964b;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+
+/*@-webkit-keyframes pulse {*/
+/*  0% {*/
+/*    -moz-transform: scale(0.9);*/
+/*    -ms-transform: scale(0.9);*/
+/*    -webkit-transform: scale(0.9);*/
+/*    transform: scale(0.9);*/
+/*  }*/
+
+/*  70% {*/
+/*    -moz-transform: scale(1);*/
+/*    -ms-transform: scale(1);*/
+/*    -webkit-transform: scale(1);*/
+/*    transform: scale(1);*/
+/*    box-shadow: 0 0 0 50px rgba(90, 153, 212, 0);*/
+/*  }*/
+
+/*  100% {*/
+/*    -moz-transform: scale(0.9);*/
+/*    -ms-transform: scale(0.9);*/
+/*    -webkit-transform: scale(0.9);*/
+/*    transform: scale(0.9);*/
+/*    box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);*/
+/*  }*/
+/*}*/
+
+.order-positions-summ{
+  padding: 10px;
+  border: 1px solid #e3dada;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+#order-positions-summ #title{
+  font-weight: bold;
+  font-size: x-large;
+}
+
+#order-positions-summ #total-price{
+  font-weight: bold;
+  font-size: large;
+  margin-left: 18px;
+  width: 100px;
+  text-align: right
+}
+
+.list li {
+  list-style: none;
+  padding: 10px;
+  border: 1px solid #e3dada;
+  margin-top: 1px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.list #title{
+  font-weight: bold;
+}
+
+.list-price{
+  margin-left: 15px;
+  width: 65px;
+  text-align: right
+}
+
+.list-nr,
+.list-count,
+.list-portion{
+  margin-left: 15px;
+  width: 65px;
+  text-align: center;
+}
+
+.list #portion{
+
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.counter input {
+  width: 30px;
+  border: 1px solid #17a2b8;
+  border-radius: 3px;
+  /*line-height: 30px;*/
+  font-size: 20px;
+  text-align: center;
+  background: #ffffff;
+  color: #3579e5;
+  /*appearance: none;*/
+  outline: 0;
+}
+.counter span {
+  /*display: block;*/
+  /*cursor: pointer;*/
+  color: #3579e5;
+  user-select: none;
+}
+ .down {
+   font-size: 30px;
+   padding: 0 10px;
+ }
+
+ .up{
+   font-size: 25px;
+   padding: 0 10px;
+ }
+
+ .changeText{
+
+ }
+
+ thead{
+   border-bottom: 2px solid black;
+ }
+
+ thead td {
+   border: none;
+ }
+
+ .bold-text{
+   font-weight: bold;
+ }
+
+ .ueberschrift{
+   font-family: "Lucida Console", "Courier New", monospace;
+   /*border-radius: 100%;*/
+   box-shadow: 0 6px rgb(212, 236, 188);
+   caret-shape: auto;
+   /*background: #ece5d0;*/
+ }
+
+  .modal-footer #text-left{
+
+  }
+
+  .modal-footer #text-right{
+    margin-left: 35px;
+  }
+
+  .food-details {
+    line-height: 1.5;
+    /*font-weight: bold;*/
+    font-size: 18px;
+    background: #e1e8db;
+    padding: 50px 70px 50px 70px;
+  }
